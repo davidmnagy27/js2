@@ -4,23 +4,30 @@
 // javascript review assignment 2
 
 
-
-for ( var i = 1; i <= 100; i++ )
+for(let i = 1; i <= 100; i++)
 {
-    if ( i%3 === 0 )
+    // if number can divide by both 3 and 5 then print Hee Haw
+    if(i%3 === 0 && i%5 === 0)
     {
-        console.log(i+ " Hee" );
+        document.write("Hee Haw!"+ "<br>");
     }
-    else if ( i%5 === 0 )
+
+    //if number can divide by 5 then print Haw
+    else if(i%5 === 0)
     {
-        console.log(i+ " “Haw!" );
+        document.write("Haw!"+ "<br>");
     }
-    else if ( i%3 === 0 && i%5 === 0 )
+
+    //if number can divide by 4 then print Hee
+    else if(i%3 === 0 )
     {
-        console.log( i + " Hee Haw" );
+        document.write("Hee!"+ "<br>");
     }
+
+    //if number cannot divide by 3 or 5 then print out the number
     else
     {
-        console.log(i);
+        document.write(i+ "<br>");
     }
+
 }
